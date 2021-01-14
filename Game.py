@@ -205,7 +205,7 @@ def addnpc():
       cur = gamedb.cursor()
       cur.execute("INSERT INTO npc(Name, Strength, Craft, Life) VALUES (%s, %s,%s,%s)", (Name, Strength, Craft, Life))
       gamedb.commit()
-      cur.close()        
+      cur.close()    
   elif "cancel" in request.form:
         pass
   return render_template('/index.html')
@@ -406,6 +406,8 @@ def getsum(name):
     data = cur.fetchall()
     return data
 
+
+  
 
 
 

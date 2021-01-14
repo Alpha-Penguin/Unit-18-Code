@@ -9,16 +9,16 @@
         </style>
     
     <body bgcolor="purple">
+    <BODY text = "white"></BODY>
     <form method="POST" action="/modify inventory">
         <center>
         <H1> Inventory </H1>
         <table>
             <th>PlayerID </th>
         </tr><br>
-        {% for item in data3 %}
             <tr>
-            <td>{{item[0]}}</td>
-        {% endfor %}
+            <td>{{data3}}</td>
+        
         </table>  
 
         <table>

@@ -9,6 +9,7 @@
         </style>
     
     <body bgcolor="purple">
+    <BODY text = "white"></BODY>
     <form method="POST" action="/view sorted encounters">
         <center>
         <H1> Sorted Encounters </H1>  
@@ -29,6 +30,7 @@
             </tr> 
         {% endfor %}
         </table>
+        <br>
 
         <label for='enemy'>Select Enemy</label>
         <select id='enemy' name="enemy">
@@ -37,7 +39,7 @@
             {% endfor %}
         </select>
        
-
+        <br>
         <br>
 
         <input type = "submit" name="cancel" value="Cancel">
